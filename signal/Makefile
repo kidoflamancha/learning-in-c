@@ -3,7 +3,8 @@ CC=gcc
 # -g 在 bin 文件中插入标准调试
 CFLAGS=-Wall -g
 # 这里放你要编译成的 bin 文件
-BIN=sig01 sig-ign sig-dfl sig-kill sig-kill2 sig-sleep sig-alarm
+BIN=sig01 sig-ign sig-dfl sig-kill sig-kill2 \
+	sig-sleep sig-alarm sig-block
 
 # 使用隐含规则将 .o 都生成 bin 文件.
 all:$(BIN)
